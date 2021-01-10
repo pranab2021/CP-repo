@@ -1,3 +1,4 @@
 x_cpp_configs/
 *.exe
 test.cpp
+.cph/
