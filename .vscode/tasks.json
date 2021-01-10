@@ -1,0 +1,57 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "C/C++: g++.exe build & run active file",
+			"command": "C:\\mingw-w64\\i686-8.1.0-posix-dwarf-rt_v6-rev0\\mingw32\\bin\\g++.exe",
+			// "command": "C:\\MinGW\\bin\\g++.exe",
+			"args": [
+				//build
+				"-g",
+				"${file}",
+				"-o",
+				"${workspaceFolder}\\${fileBasenameNoExtension}.exe",
+
+				//run
+				// "&&",
+				// "${fileDirname}\\${fileBasenameNoExtension}.exe",
+			],
+			"presentation": {
+                "clear": true,
+            },
+			"options": {
+				"cwd": "C:\\mingw-w64\\i686-8.1.0-posix-dwarf-rt_v6-rev0\\mingw32\\bin"
+				// "cwd": "C:\\MinGW\\bin"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			// "group": {
+			// 	"kind": "build",
+			// 	"isDefault": true
+			// }
+		},
+		{ //Uncomment to run the generated .exe in dedicated shell
+		    "type": "shell",
+		    "label": "Run",
+		    "presentation": {
+		        "clear": true,
+		        "panel": "dedicated"
+		    },
+		    "command": [
+		        "./${fileBasenameNoExtension}.exe",
+		    ],
+		    "dependsOn": [
+		        "C/C++: g++.exe build & run active file"
+		    ],
+		    "problemMatcher": [
+				"$gcc"
+			],
+		    "group": {
+		        "kind": "build",
+		        "isDefault": true
+		    }
+		}// to uncomment line 33 to 53...first comment line 16&17&28to31
+	]
+}

@@ -1,0 +1,10 @@
+x_cpp_configs/C++_GCC/CodeEdits.cpp
+x_cpp_configs/C++_GCC/.vscode/c_cpp_properties.json
+x_cpp_configs/C++_GCC/.vscode/launch.json
+x_cpp_configs/C++_GCC/.vscode/tasks.json
+x_cpp_configs/C++_MSVC/CodeEdits.cpp
+x_cpp_configs/C++_MSVC/.vscode/c_cpp_properties.json
+x_cpp_configs/C++_MSVC/.vscode/launch.json
+x_cpp_configs/C++_MSVC/.vscode/tasks.json
+*.exe
+test.cpp
