@@ -5,6 +5,9 @@
 using namespace std;
 
 int main(){
+    ios_base::sync_with_stdio(false);
+	cin.tie(NULL);
+
     int n, divisor, output=0;
     int input;
     cin>>n>>divisor;
